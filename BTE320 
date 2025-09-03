@@ -1,0 +1,117 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPrZvIKkMddpbjSGdwuhUT5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hag86/BTE-320/blob/main/BTE320%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OcW4OSQJ-ob2",
+        "outputId": "5233a4b7-3362-42f0-e6ec-5220b73fbd7e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Sales: 12000\n",
+            "12000.0\n",
+            "4800.0\n",
+            "7200.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "Sales = input(\"Enter Sales: \")\n",
+        "Sales = float(Sales)\n",
+        "print(Sales)\n",
+        "COGS = (Sales * 0.4)\n",
+        "print(COGS)\n",
+        "Gross_Profit = Sales - COGS\n",
+        "print(Gross_Profit)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sales= input(\"Enter Sales: \")\n",
+        "sales = float(sales)\n",
+        "\n",
+        "cogs_pct = input(\"Enter Cost of Goods (%): \")\n",
+        "cogs_pct = float(cogs_pct)\n",
+        "\n",
+        "cogs = sales * cogs_pct\n",
+        "print(cogs)\n",
+        "\n",
+        "gross_profit = sales - cogs\n",
+        "print(gross_profit)\n",
+        "\n",
+        "print(f\"Cost of Goods Sold: ${cogs}\")\n",
+        "print(f\"Gross Profit: ${gross_profit}\")\n",
+        "\n",
+        "tax_rate = input(\"Enter Tax Rate (%): \")\n",
+        "tax_rate = float(tax_rate)\n",
+        "\n",
+        "tax = gross_profit * tax_rate\n",
+        "print(tax)\n",
+        "\n",
+        "net_income = gross_profit - tax\n",
+        "print(net_income)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BZzfXH_8A8qY",
+        "outputId": "fe08baf0-3efe-4a54-87a7-67d3fea8df9a"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Sales: 12000\n",
+            "Enter Cost of Goods (%): 0.4\n",
+            "4800.0\n",
+            "7200.0\n",
+            "Cost of Goods Sold: $4800.0\n",
+            "Gross Profit: $7200.0\n",
+            "Enter Tax Rate (%): 0.07\n",
+            "504.00000000000006\n",
+            "6696.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
